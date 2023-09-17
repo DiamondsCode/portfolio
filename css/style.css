@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@500&display=swap');
+* {
+    margin: 0;
+    font-family: 'Cabin', sans-serif;
+    color: rgb(190, 190, 190);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.selector {
+    -webkit-user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+.header {
+    text-align: center;
+    font-size: 30pt;
+    padding-top: 25vh;
+    padding-bottom: 35vh;
+    color: rgb(190, 190, 190);
+    background-color: rgb(36, 36, 36);
+}
+::-webkit-scrollbar {
+    display: none;
+}
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18pt;
+    padding-left: 20vw;
+    padding-right: 20vw;
+    color: rgb(190, 190, 190);
+    padding-top: 20vh;
+}
+
+.about-image {
+    text-align: center;
+}
+
+.about img {
+    width: 70%;
+    max-width: 100%; /* Ensure the image doesn't overflow on small screens */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.free {
+    background: linear-gradient(45deg, rgb(0, 109, 128) 0%, rgba(255,165,0,1) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+a {
+    color: rgb(190, 190, 190);
+}
+
+a.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 23pt;
+    background-color: transparent;
+    color: transparent;
+    text-decoration: none;
+    border: 2px solid black;
+    border-radius: 2px;
+    cursor: pointer;
+    background-image: linear-gradient(45deg, rgb(0, 109, 128) 0%, rgba(255, 165, 0, 1) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    transition: background-image 0.3s ease-in-out, border-image 0.3s ease-in-out;
+    border-image: linear-gradient(45deg, rgb(0, 109, 128) 0%, rgba(255, 165, 0, 1) 100%);
+    border-image-slice: 1;
+    border-width: 4px;
+}
+
+/* Hover effect */
+a.btn:hover {
+    background-image: linear-gradient(45deg, rgba(255, 165, 0, 1) 0%, rgb(0, 109, 128) 100%);
+    background-clip: text;
+    border-image: linear-gradient(45deg, rgba(255, 165, 0, 1) 0%, rgb(0, 109, 128) 100%);
+    transition: background-image 0.3s ease-in-out, border-image 0.3s ease-in-out;
+    border-image-slice: 1;
+    border-width: 4px;
+}
+
+.mainh1 {
+    text-align: center;
+    font-size: 50pt;
+    padding-top: 30vh;
+}
+
+.mainh3 {
+    text-align: center;
+    font-size: 20pt;
+}
+.footer {
+    background-color: rgb(36, 36, 36);
+    text-align: center;
+    font-size: 20pt;
+    padding: 3vh;
+}
+.languages {
+    padding-left: 30vw;
+    padding-right: 30vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 3vh;
+}
+
+.langimg {
+    width: 10%;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main {
+    background-image: url('../img/about.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    height: auto;
+    min-height: 100vh;
+    padding-bottom: 50px;
+}
+
+/* Gallery container */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0 10vw;
+}
+
+@media screen and (max-width: 768px) {
+    /* Adjust styles for screens up to 768px width (typical tablet and mobile screens) */
+
+    .header {
+        font-size: 24pt;
+        padding-top: 20vh;
+        padding-bottom: 20vh;
+    }
+
+    .mainh1 {
+        font-size: 40pt;
+        padding-top: 20vh;
+    }
+
+    .about {
+        padding-left: 10vw;
+        padding-right: 10vw;
+        padding-top: 10vh;
+        flex-direction: column;
+    }
+
+    .languages {
+        padding-left: 10vw;
+        padding-right: 10vw;
+        padding-top: 10vh;
+    }
+
+    .langimg {
+        width: 20%;
+        padding-left: 0.5vw;
+        padding-right: 0.5vw;
+    }
+    .gallery-item {
+        width: 100%;
+    }
+    .gallery {
+        padding: 0;
+    }
+}
